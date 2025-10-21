@@ -1,0 +1,11 @@
+<% content_for :title, "New segment" %>
+
+<h1>New segment</h1>
+
+<%= render "form", segment: @segment %>
+
+<br>
+
+<div>
+  <%= link_to "Back to segments", segments_path %>
+</div>

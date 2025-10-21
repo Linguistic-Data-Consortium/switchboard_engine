@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Segments" %>
+
+<h1>Segments</h1>
+
+<div id="segments">
+  <% @segments.each do |segment| %>
+    <%= render segment %>
+    <p>
+      <%= link_to "Show this segment", segment %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New segment", new_segment_path %>

@@ -1,0 +1,47 @@
+<%= form_with(model: segment) do |form| %>
+  <% if segment.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(segment.errors.count, "error") %> prohibited this segment from being saved:</h2>
+
+      <ul>
+        <% segment.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :filename, style: "display: block" %>
+    <%= form.text_field :filename %>
+  </div>
+
+  <div>
+    <%= form.label :channel, style: "display: block" %>
+    <%= form.text_field :channel %>
+  </div>
+
+  <div>
+    <%= form.label :beg, style: "display: block" %>
+    <%= form.text_field :beg %>
+  </div>
+
+  <div>
+    <%= form.label :end, style: "display: block" %>
+    <%= form.text_field :end %>
+  </div>
+
+  <div>
+    <%= form.label :turn, style: "display: block" %>
+    <%= form.number_field :turn %>
+  </div>
+
+  <div>
+    <%= form.label :text, style: "display: block" %>
+    <%= form.textarea :text %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

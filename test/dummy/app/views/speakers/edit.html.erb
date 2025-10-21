@@ -1,0 +1,12 @@
+<% content_for :title, "Editing speaker" %>
+
+<h1>Editing speaker</h1>
+
+<%= render "form", speaker: @speaker %>
+
+<br>
+
+<div>
+  <%= link_to "Show this speaker", @speaker %> |
+  <%= link_to "Back to speakers", speakers_path %>
+</div>
