@@ -27,17 +27,17 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "@lucide/svelte": "^0.482.0",
     "@hotwired/stimulus": "^3.2.2",
+    "@lucide/svelte": "^0.482.0",
     "@sveltejs/vite-plugin-svelte": "^6.2.1",
-    "tailwindcss": "^4.1.14",
-    "postcss": "^8.5.3",
     "mode-watcher": "^0.4.1",
+    "postcss": "^8.5.3",
     "svelte": "5",
     "svelte-sonner": "^0.3.28",
-    "vite": "^7.1.10",
+    "tailwindcss": "^4.1.14",
+    "vite": "^5.0.0",
     "vite-plugin-rails": "^0.5.0",
-    "vite-plugin-ruby": "^5.1.1"
+    "vite-plugin-ruby": "^5.1.0"
   },
   "scripts": {
     "build": "vite build",

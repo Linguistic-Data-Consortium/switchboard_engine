@@ -1,8 +1,10 @@
 PATH
   remote: .
   specs:
-    switchboard_engine (0.1.0)
+    switchboard_engine (0.1.3)
+      bootsnap
       rails (>= 8.0.3)
+      vite_rails
 
 GEM
   remote: https://rubygems.org/
@@ -82,6 +84,8 @@ GEM
     base64 (0.3.0)
     benchmark (0.4.1)
     bigdecimal (3.3.1)
+    bootsnap (1.18.6)
+      msgpack (~> 1.2)
     builder (3.3.0)
     concurrent-ruby (1.3.5)
     connection_pool (2.5.4)
@@ -117,6 +121,7 @@ GEM
     marcel (1.1.0)
     mini_mime (1.1.5)
     minitest (5.26.0)
+    msgpack (1.8.0)
     mutex_m (0.3.0)
     net-imap (0.5.12)
       date
