@@ -16,7 +16,7 @@
     formData.append('file', file)
 
     uploading = true
-    router.post('/speakers/upload', formData, {
+    router.post('/swb/speakers/upload', formData, {
       onFinish: () => {
         uploading = false
         fileInput.value = ''
@@ -38,7 +38,7 @@
       return
     }
 
-    router.delete('/speakers/delete_all', {
+    router.delete('/swb/speakers/delete_all', {
       onSuccess: () => {
         // Inertia will reload the page with empty speakers
       }

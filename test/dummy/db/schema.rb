@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_10_21_045127) do
+ActiveRecord::Schema[8.0].define(version: 2025_10_21_160310) do
   create_table "segments", force: :cascade do |t|
     t.string "filename"
     t.string "channel"
@@ -23,6 +23,29 @@ ActiveRecord::Schema[8.0].define(version: 2025_10_21_045127) do
   end
 
   create_table "speakers", force: :cascade do |t|
+    t.string "filename"
+    t.string "channel"
+    t.string "sex"
+    t.integer "birth_year"
+    t.string "dialect_area"
+    t.integer "education"
+    t.string "topic_description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "switchboard_engine_segments", force: :cascade do |t|
+    t.string "filename"
+    t.string "channel"
+    t.float "beg"
+    t.float "end"
+    t.integer "turn"
+    t.text "text"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "switchboard_engine_speakers", force: :cascade do |t|
     t.string "filename"
     t.string "channel"
     t.string "sex"

@@ -20,7 +20,7 @@
     }
 
     uploading = true
-    router.post('/segments/upload', formData, {
+    router.post('/swb/segments/upload', formData, {
       onFinish: () => {
         uploading = false
         if (fileInput) fileInput.value = ''
@@ -43,7 +43,7 @@
       return
     }
 
-    router.delete('/segments/delete_all', {
+    router.delete('/swb/segments/delete_all', {
       onSuccess: () => {
         // Inertia will reload the page with empty segments
       }
