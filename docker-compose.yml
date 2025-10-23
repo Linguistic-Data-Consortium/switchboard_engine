@@ -36,6 +36,7 @@ services:
       - DEBUG='*vite*'
       - RAILS_ENV=development
       - VITE_RUBY_HOST=0.0.0.0
+      - VITE_RUBY_ROOT=/rails
   # database:
   #   image: postgres
   #   ports:

@@ -8,7 +8,6 @@
     "@aws-sdk/credential-provider-cognito-identity": "^3.859.0",
     "@aws-sdk/lib-storage": "^3.859.0",
     "@aws-sdk/s3-request-presigner": "^3.859.0",
-    "@inertiajs/svelte": "^2.2.8",
     "@rails/actioncable": "^7.0.1",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/container-queries": "^0.1.1",

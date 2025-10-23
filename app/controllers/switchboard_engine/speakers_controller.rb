@@ -4,9 +4,12 @@ module SwitchboardEngine
 
     # GET /speakers
     def index
-      render inertia: "speakers_index", props: {
-        speakers: Speaker.all.as_json
-      }
+      respond_to do |format|
+        format.html
+        format.json do
+          render json: { speakers: Speaker.all }
+        end
+      end
     end
 
     # GET /speakers/1

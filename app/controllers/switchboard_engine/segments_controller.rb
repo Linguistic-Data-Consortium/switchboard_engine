@@ -4,9 +4,12 @@ module SwitchboardEngine
 
     # GET /segments
     def index
-      render inertia: "segments_index", props: {
-        segments: Segment.limit(1000).as_json
-      }
+      respond_to do |format|
+        format.html
+        format.json do
+          render json: { segments: Segment.limit(1000) }
+        end
+      end
     end
 
     # GET /segments/1

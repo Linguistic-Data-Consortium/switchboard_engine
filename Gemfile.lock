@@ -99,8 +99,6 @@ GEM
       activesupport (>= 6.1)
     i18n (1.14.7)
       concurrent-ruby (~> 1.0)
-    inertia_rails (3.11.0)
-      railties (>= 6)
     io-console (0.8.1)
     irb (1.15.2)
       pp (>= 0.6.0)
@@ -267,7 +265,6 @@ PLATFORMS
   arm64-darwin-24
 
 DEPENDENCIES
-  inertia_rails (~> 3.11)
   propshaft
   puma
   rubocop-rails-omakase
