@@ -5,7 +5,7 @@
   },
   "development": {
     "autoBuild": true,
-    "publicOutputDir": "vite-dev-switchboard",
+    "publicOutputDir": "../app/assets/javascript",
     "port": 3036
   },
   "test": {
