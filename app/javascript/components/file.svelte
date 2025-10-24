@@ -1,4 +1,5 @@
 <script>
+  
   import { getp } from '../lib/ldcjs/getp';
   let { filename, speakers = [], segments = [] } = $props()
   let url = $state();
