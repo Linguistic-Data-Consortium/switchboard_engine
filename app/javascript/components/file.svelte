@@ -1,5 +1,8 @@
 <script>
   let { filename, speakers = [], segments = [] } = $props()
+  let url = $state();
+  fetch(`/switchboard?filename=${encodeURIComponent(filename)}`).then(x => url = x);
+
   let audioElement
   let canvasElement
   let currentTime = $state(0)
@@ -106,7 +109,7 @@
 
   async function generateWaveform() {
     try {
-      const response = await fetch(`/switchboard?filename=${encodeURIComponent(filename)}`)
+      const response = await fetch(url);
       const arrayBuffer = await response.arrayBuffer()
 
       const tempContext = new (window.AudioContext || window.webkitAudioContext)()
@@ -221,7 +224,7 @@
     <div class="audio-player-card mb-8">
       <audio
         bind:this={audioElement}
-        src="/switchboard?filename={encodeURIComponent(filename)}"
+        src="{url}"
         ontimeupdate={handleTimeUpdate}
         onloadedmetadata={handleLoadedMetadata}
         onplay={handlePlay}
