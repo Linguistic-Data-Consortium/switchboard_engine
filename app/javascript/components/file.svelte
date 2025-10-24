@@ -1,7 +1,8 @@
 <script>
+  import { getp } from '../lib/ldcjs/getp';
   let { filename, speakers = [], segments = [] } = $props()
   let url = $state();
-  fetch(`/switchboard?filename=${encodeURIComponent(filename)}`).then(x => url = x);
+  getp(`/switchboard?filename=${encodeURIComponent(filename)}`).then(x => url = x);
 
   let audioElement
   let canvasElement
