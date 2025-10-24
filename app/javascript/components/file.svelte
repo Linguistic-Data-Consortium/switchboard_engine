@@ -1,5 +1,5 @@
 <script>
-  
+
   import { getp } from '../lib/ldcjs/getp';
   let { filename, speakers = [], segments = [] } = $props()
   let url = $state();
@@ -227,6 +227,7 @@
       <audio
         bind:this={audioElement}
         src="{url}"
+        crossorigin="anonymous"
         ontimeupdate={handleTimeUpdate}
         onloadedmetadata={handleLoadedMetadata}
         onplay={handlePlay}

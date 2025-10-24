@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    switchboard_engine (0.1.8)
+    switchboard_engine (0.1.10)
       bootsnap
       rails (>= 8.0.3)
       vite_rails
